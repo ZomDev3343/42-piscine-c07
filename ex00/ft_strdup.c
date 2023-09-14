@@ -6,7 +6,7 @@
 /*   By: truello <thomasdelan2@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 15:25:50 by truello           #+#    #+#             */
-/*   Updated: 2023/09/05 15:43:24 by truello          ###   ########.fr       */
+/*   Updated: 2023/09/13 10:33:13 by truello          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,3 @@ char	*ft_strdup(char *src)
 		r[src_len] = src[src_len];
 	return (r);
 }
-/*#include <stdio.h>
-int	main(void)
-{
-	char test[] = "Hello World";
-	char *test2 = ft_strdup(test);
-	
-	printf("%s\n", test2);
-	return (0);
-}*/

@@ -6,7 +6,7 @@
 /*   By: truello <thomasdelan2@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 16:26:26 by truello           #+#    #+#             */
-/*   Updated: 2023/09/07 10:28:42 by truello          ###   ########.fr       */
+/*   Updated: 2023/09/13 10:42:27 by truello          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	if (size == 0)
 	{
 		r = (char *) malloc(1);
+		r[0] = 0;
 	}
 	else
 	{

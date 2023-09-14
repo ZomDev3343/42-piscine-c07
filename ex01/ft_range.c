@@ -6,7 +6,7 @@
 /*   By: truello <thomasdelan2@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 15:43:43 by truello           #+#    #+#             */
-/*   Updated: 2023/09/05 15:51:42 by truello          ###   ########.fr       */
+/*   Updated: 2023/09/13 10:35:30 by truello          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,3 @@ int	*ft_range(int min, int max)
 	}
 	return (r);
 }
-/*#include <stdio.h>
-int	main(void)
-{
-	int	*test = ft_range(1, 5);
-	for (int i = 0; i < 4; i++)
-		printf("Test[%d] : %d\n", i, test[i]);
-	return (0);
-}*/

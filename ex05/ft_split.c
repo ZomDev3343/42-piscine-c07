@@ -6,7 +6,7 @@
 /*   By: truello <thomasdelan2@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 18:37:09 by truello           #+#    #+#             */
-/*   Updated: 2023/09/06 13:26:19 by truello          ###   ########.fr       */
+/*   Updated: 2023/09/13 13:54:20 by truello          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	get_nb_parts(char *str, char *charset)
 {
 	while (*(++str))
 		if ((is_sep(*str, charset) && !is_sep(*(str - 1), charset))
-			|| !*(str + 1))
+			|| (!*(str + 1) && !is_sep(*str, charset)))
 			return (1 + get_nb_parts(str, charset));
 	return (0);
 }
